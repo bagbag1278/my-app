@@ -2,7 +2,15 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-type AnimationType = "fade" | "slide-up" | "slide-down" | "slide-left" | "slide-right" | "scale" | "rotate" | "flip";
+type AnimationType =
+  | "fade"
+  | "slide-up"
+  | "slide-down"
+  | "slide-left"
+  | "slide-right"
+  | "scale"
+  | "rotate"
+  | "flip";
 
 interface AdvancedScrollAnimationProps {
   children: React.ReactNode;
@@ -14,14 +22,14 @@ interface AdvancedScrollAnimationProps {
   once?: boolean;
 }
 
-const AdvancedScrollAnimation = ({ 
-  children, 
-  type = "slide-up", 
-  delay = 0, 
+const AdvancedScrollAnimation = ({
+  children,
+  type = "slide-up",
+  delay = 0,
   duration = 0.6,
   threshold = 0.1,
   className = "",
-  once = true
+  once = true,
 }: AdvancedScrollAnimationProps) => {
   const [ref, inView] = useInView({
     triggerOnce: once,
@@ -68,7 +76,7 @@ const AdvancedScrollAnimation = ({
       animate={getAnimate()}
       transition={{ duration, delay, ease: "easeOut" }}
       className={`w-full ${className}`}
-      style={{ display: 'block' }}
+      style={{ display: "block" }}
     >
       {children}
     </motion.div>
