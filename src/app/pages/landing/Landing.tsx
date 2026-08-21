@@ -2,6 +2,7 @@ import React from "react";
 import HeroSction from "../../components/Landing/HeroSction";
 import AdvancedScrollAnimation from "../../components/Animation/AdvancedScrollAnimation";
 import TrustBar from "../../components/Landing/TrustBar";
+import FeaturesSection from "../../components/Landing/FeaturesSection";
 
 const Landing = () => {
   return (
@@ -14,6 +15,9 @@ const Landing = () => {
       </AdvancedScrollAnimation>
       <AdvancedScrollAnimation type="slide-up" delay={0.1}>
         <TrustBar />
+      </AdvancedScrollAnimation>
+         <AdvancedScrollAnimation type="slide-left" delay={0.1}>
+        <FeaturesSection />
       </AdvancedScrollAnimation>
     </div>
   );
