@@ -29,7 +29,7 @@ const FeaturesSection = () => {
             <p className="text-[40px]  text-center text-violet-500">◈</p>
           </div>
           <p className="text-[22px] font-bold text-left text-white">
-            Adaptive weave
+            Adaptive weave 
           </p>
           <p className="text-sm font-bold text-left text-violet-500 mt-16">
             Learn more{" "}
