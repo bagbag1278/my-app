@@ -37,10 +37,6 @@ const FeaturesSection = () => {
         </div>
         <div className="w-80 h-63 inset-0 overflow-hidden rounded-[24px] border border-white/[0.10] bg-white/[0.055] backdrop-blur-xl shadow-[0_20px_60px_rgba(8,3,20,0.25)]ّ"></div>
 
-        <div className="w-80 h-63 inset-0 overflow-hidden rounded-[24px] border border-white/[0.10] bg-white/[0.055] backdrop-blur-xl shadow-[0_20px_60px_rgba(8,3,20,0.25)]ّ"></div>
-        <div className="w-80 h-63 inset-0 overflow-hidden rounded-[24px] border border-white/[0.10] bg-white/[0.055] backdrop-blur-xl shadow-[0_20px_60px_rgba(8,3,20,0.25)]ّ"></div>
-        <div className="w-80 h-63 inset-0 overflow-hidden rounded-[24px] border border-white/[0.10] bg-white/[0.055] backdrop-blur-xl shadow-[0_20px_60px_rgba(8,3,20,0.25)]ّ"></div>
-        <div className="w-80 h-63 inset-0 overflow-hidden rounded-[24px] border border-white/[0.10] bg-white/[0.055] backdrop-blur-xl shadow-[0_20px_60px_rgba(8,3,20,0.25)]ّ"></div>
       </div>
     </div>
   );
