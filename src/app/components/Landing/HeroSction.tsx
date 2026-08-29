@@ -4,18 +4,18 @@ import ButtonsSection from "../hover.dev/ButtonsSection";
 
 const HeroSction = () => {
   return (
-    <div className="w-full  flex justify-center ">
-      <div className="h-[534px]  mt-[236px] flex justify-between ">
-        <div className="w-[480px] h-[521px]   ">
+    <div className="w-full flex justify-center max-[1024px]:flex">
+      <div className="h-[534px] mt-[236px] flex justify-between ">
+        <div className="w-[480px] h-[521px] ">
           <p className="text-sm font-bold text-left mb-5 text-pink-400">
             NEW SEASON — FW26
           </p>
-          <p className="text-8xl font-bold text-left text-white">Wear the</p>
-          <p className="text-8xl font-bold text-left">
-            <span className="text-8xl font-bold text-left text-black">
+          <p className="text-8xl max-[1024px]:text-6xl font-bold text-left text-white">Wear the</p>
+          <p className="text-8xl max-[1024px]:text-6xl font-bold text-left">
+            <span className="text-8xl max-[1024px]:text-6xl font-bold text-left text-black">
               future
             </span>
-            <span className="text-8xl font-bold text-left text-white">.</span>
+            <span className="text-8xl max-[1024px]:text-6xl font-bold text-left text-white">.</span>
           </p>
       <ButtonsSection />
 

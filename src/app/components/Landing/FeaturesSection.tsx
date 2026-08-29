@@ -8,7 +8,7 @@ const FeaturesSection = () => {
           <p className="  text-sm font-bold text-left text-pink-400">
             WHY HELIX
           </p>
-          <p className=" text-[56px] max-[1024]:text-[40px] font-bold text-left text-white">
+          <p className=" text-[56px]  max-[1024]:text-[40px] font-bold text-left text-white">
             Engineered for
           </p>
           <p className="w-[456px]  text-[56px] max-[1024]:text-[40px] font-bold text-left">
