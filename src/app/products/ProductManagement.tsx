@@ -6,6 +6,7 @@ import {
   FiAlertCircle,
   FiArrowDown,
   FiArrowUpRight,
+  FiBookOpen,
   FiBox,
   FiCheck,
   FiChevronDown,
@@ -86,6 +87,7 @@ const initialProducts: Product[] = [
 const navigation = [
   { label: "Overview", icon: FiGrid, href: "#overview" },
   { label: "Products", icon: FiBox, href: "/products", active: true },
+  { label: "Courses", icon: FiBookOpen, href: "/courses" },
   { label: "Collections", icon: FiLayers, href: "#collections" },
   { label: "Discounts", icon: FiTag, href: "#discounts" },
 ];
@@ -188,7 +190,7 @@ export default function ProductManagement() {
           </p>
           <nav aria-label="Dashboard" className="space-y-1">
             {navigation.map(({ label, icon: Icon, href, active }) => (
-              <a
+              <Link
                 key={label}
                 href={href}
                 aria-current={active ? "page" : undefined}
@@ -205,7 +207,7 @@ export default function ProductManagement() {
                     {products.length}
                   </span>
                 )}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -256,10 +258,21 @@ export default function ProductManagement() {
               </span>
               AURA<span className="-ml-2 text-fuchsia-300">.</span>
             </Link>
-            <p className="hidden text-xs text-white/40 sm:block">
-              Store <span className="mx-2 text-white/20">/</span>{" "}
-              <span className="text-white/70">Products</span>
-            </p>
+            <nav aria-label="Catalog pages" className="flex items-center gap-1">
+              <Link
+                href="/products"
+                aria-current="page"
+                className="rounded-lg bg-violet-400/10 px-3 py-2 text-xs font-medium text-violet-200"
+              >
+                Products
+              </Link>
+              <Link
+                href="/courses"
+                className="rounded-lg px-3 py-2 text-xs text-white/50 transition hover:bg-white/[0.05] hover:text-white"
+              >
+                Courses
+              </Link>
+            </nav>
             <div className="ml-auto flex items-center gap-3">
               <button
                 type="button"
