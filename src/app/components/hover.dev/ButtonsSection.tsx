@@ -6,13 +6,12 @@ import {
   useMotionTemplate,
   useMotionValue,
   useSpring,
-} from "framer-motion"; 
-import { FiMousePointer } from "react-icons/fi";
+} from "framer-motion";
 
 const ButtonsSection = () => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const ROTATION_RANGE = 12.5; 
+  const ROTATION_RANGE = 12.5;
   const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
   const x = useMotionValue(0);
@@ -54,28 +53,26 @@ const ButtonsSection = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="w-90 mt-30 flex justify-center gap-3"
+      className="mt-8 flex flex-wrap gap-3"
     >
-      <div
+      <a
+        href="#collection"
         style={{
           transform: "translateZ(30px)",
         }}
-        className="w-[170px] h-[56px] bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] rounded-4xl cursor-pointer shadow-lg hover:shadow-xl transition-shadow"
+        className="inline-flex h-13 min-w-40 items-center justify-center rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] px-6 text-sm font-semibold text-white shadow-lg shadow-fuchsia-950/30 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-fuchsia-300"
       >
-        <p className="text-base font-bold text-center text-white mt-3">
-          Explore drop
-        </p>
-      </div>
-      <div
+        Explore the drop
+      </a>
+      <a
+        href="#story"
         style={{
           transform: "translateZ(20px)",
         }}
-        className="w-[170px] h-[56px] rounded-4xl border border-white/30 backdrop-blur-sm cursor-pointer hover:bg-white/10 transition-colors"
+        className="inline-flex h-13 min-w-40 items-center justify-center rounded-full border border-white/25 px-6 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
       >
-        <p className="text-base font-bold text-center text-white mt-3">
-          ▶ Watch film
-        </p>
-      </div>
+        Discover the story
+      </a>
     </motion.div>
   );
 };
