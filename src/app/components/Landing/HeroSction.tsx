@@ -1,63 +1,103 @@
-import React from "react";
+
 import Image from "next/image";
 import ButtonsSection from "../hover.dev/ButtonsSection";
 
 const HeroSction = () => {
   return (
-    <div className="w-full flex justify-center max-[1024px]:flex">
-      <div className="h-[534px] mt-[236px] flex justify-between ">
-        <div className="w-[480px] h-[521px] ">
-          <p className="text-sm font-bold text-left mb-5 text-pink-400">
-            NEW SEASON — FW26
-          </p>
-          <p className="text-8xl max-[1024px]:text-6xl font-bold text-left text-white">Wear the</p>
-          <p className="text-8xl max-[1024px]:text-6xl font-bold text-left">
-            <span className="text-8xl max-[1024px]:text-6xl font-bold text-left text-black">
-              future
-            </span>
-            <span className="text-8xl max-[1024px]:text-6xl font-bold text-left text-white">.</span>
-          </p>
-      <ButtonsSection />
+    <section
+      aria-labelledby="hero-title"
+      className="mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pb-24 pt-20 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:px-16 lg:pb-32 lg:pt-28"
+    >
+      <div className="max-w-2xl">
+        <p className="mb-6 text-xs font-bold tracking-[0.28em] text-pink-300">
+          NEW SEASON <span className="mx-2 text-white/30">/</span> FW26
+        </p>
 
-          <div className="w-80 flex justify-between  mt-10">
-            <div className="flex-col gap-3">
-              <p className="text-3xl font-bold text-left text-white">48K</p>
-              <p className="text-[13px] text-left text-white/50">pieces sold</p>
-            </div>
-            <div className="flex-col gap-3">
-              <p className="text-3xl font-bold text-left text-white">4.9</p>
-              <p className="text-[13px] text-left text-white/50">avg. rating</p>
-            </div>
-            
-            <div className="flex-col gap-3">
-              <p className="text-3xl font-bold text-left text-white">100%</p>
-              <p className="text-[13px] text-left text-white/50">recycled</p>
-            </div>
+        <h1
+          id="hero-title"
+          className="text-6xl font-semibold leading-[0.95] tracking-[-0.06em] text-white sm:text-7xl lg:text-8xl"
+        >
+          Wear the
+          <br />
+          <span className="bg-gradient-to-r from-violet-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">
+            future.
+          </span>
+        </h1>
+
+        <p className="mt-7 max-w-md text-base leading-7 text-white/60 sm:text-lg">
+          A new uniform for wherever the night takes you. Thoughtful materials,
+          unexpected color, made to move.
+        </p>
+
+        <ButtonsSection />
+
+        <dl className="mt-12 grid max-w-sm grid-cols-3 gap-5 border-t border-white/10 pt-6">
+          <div>
+            <dt className="text-2xl font-semibold text-white sm:text-3xl">
+              48K
+            </dt>
+            <dd className="mt-1 text-xs text-white/45">
+              pieces in motion
+            </dd>
           </div>
-        </div>
-        <div className="w-95 h-130 rounded-3xl  flex-col border-white/[0.12] bg-white/[0.06] p-3 shadow-[0_24px_80px_rgba(16,4,35,0.45)] backdrop-blur-xl">
-          <div className="w-90 h-100 rounded-3xl  ">
+
+          <div>
+            <dt className="text-2xl font-semibold text-white sm:text-3xl">
+              4.9
+            </dt>
+            <dd className="mt-1 text-xs text-white/45">
+              community rating
+            </dd>
+          </div>
+
+          <div>
+            <dt className="text-2xl font-semibold text-white sm:text-3xl">
+              100%
+            </dt>
+            <dd className="mt-1 text-xs text-white/45">
+              recycled shell
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <div className="relative mx-auto w-full max-w-md">
+        <div
+          aria-hidden="true"
+          className="absolute -inset-8 rounded-full bg-fuchsia-500/15 blur-3xl"
+        />
+
+        <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/[0.06] p-3 shadow-[0_30px_100px_rgba(16,4,35,0.55)] backdrop-blur-xl">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
             <Image
               src="/HeroSction/aurora-frame-191-clean.png"
-              width={352}
-              height={400}
-              alt="Picture of the author"
+              fill
+              priority
+              sizes="(max-width: 1024px) 90vw, 40vw"
+              className="object-cover"
+              alt="Aurora iridescent purple puffer jacket from the FW26 collection"
             />
+
+            <span className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] text-white/80 backdrop-blur-md">
+              FW26 / 01
+            </span>
           </div>
-          <div className="w-89 h-19 rounded-3xl  mt-5 border-white/[0.12] bg-white/[0.06] p-3 shadow-[0_24px_80px_rgba(16,4,35,0.45)] backdrop-blur-xl">
-            <p className="text-2xl   font-bold text-right text-white">$289</p>
-            <div className="relative bottom-8">
-              <p className="text-lg font-bold text-left text-white">
+
+          <div className="flex items-center justify-between px-3 pb-2 pt-5">
+            <div>
+              <p className="text-base font-semibold text-white">
                 Aurora Jacket
               </p>
-              <p className="text-[13px] text-left text-white/[0.55]">
+              <p className="mt-1 text-xs text-white/50">
                 Iridescent shell · Unisex
               </p>
             </div>
+
+            <p className="text-lg font-semibold text-white">$289</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

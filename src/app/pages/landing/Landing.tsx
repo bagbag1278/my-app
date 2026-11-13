@@ -1,26 +1,37 @@
-import React from "react";
-import HeroSction from "../../components/Landing/HeroSction";
-import AdvancedScrollAnimation from "../../components/Animation/AdvancedScrollAnimation";
-import TrustBar from "../../components/Landing/TrustBar";
-import FeaturesSection from "../../components/Landing/FeaturesSection";
 
-const Landing = () => {
+const TrustBar = () => {
   return (
-    <div
-      className="h-[2820px] w-full inset-0
-    bg-[radial-gradient(circle_at_20%_8%,rgba(115,46,255,0.58),transparent_34%),radial-gradient(circle_at_88%_22%,rgba(221,35,127,0.38),transparent_40%),radial-gradient(circle_at_62%_48%,rgba(119,37,188,0.18),transparent_42%),linear-gradient(180deg,#180828_0%,#10071e_48%,#090511_100%)]"
+    <section
+      aria-label="Featured in"
+      className="w-full border-y border-white/[0.06] bg-white/[0.02] backdrop-blur-sm"
     >
-      <AdvancedScrollAnimation type="fade" delay={0.1}>
-        <HeroSction />
-      </AdvancedScrollAnimation>
-      <AdvancedScrollAnimation type="slide-up" delay={0.1}>
-        <TrustBar />
-      </AdvancedScrollAnimation>
-         <AdvancedScrollAnimation type="slide-left" delay={0.1}>
-        <FeaturesSection />
-      </AdvancedScrollAnimation>
-    </div>
+      <div className="mx-auto flex min-h-16 max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-4 px-6 py-5 sm:justify-between sm:px-10 lg:px-16">
+        <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
+          VOGUE
+        </span>
+
+        <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
+          HYPEBEAST
+        </span>
+
+        <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
+          HIGHSNOBIETY
+        </span>
+
+        <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
+          WWD
+        </span>
+
+        <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
+          ELLE
+        </span>
+
+        <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
+          GQ
+        </span>
+      </div>
+    </section>
   );
 };
 
-export default Landing;
+export default TrustBar;
