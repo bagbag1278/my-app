@@ -1,3 +1,4 @@
+
 const TrustBar = () => {
   return (
     <section
@@ -8,18 +9,23 @@ const TrustBar = () => {
         <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
           VOGUE
         </span>
+
         <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
           HYPEBEAST
         </span>
+
         <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
           HIGHSNOBIETY
         </span>
+
         <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
           WWD
         </span>
+
         <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
           ELLE
         </span>
+
         <span className="text-xs font-bold tracking-[0.16em] text-white/40 sm:text-sm">
           GQ
         </span>
